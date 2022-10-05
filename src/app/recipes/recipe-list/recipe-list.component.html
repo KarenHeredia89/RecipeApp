@@ -4,16 +4,20 @@
     </div>
 </div>
 <div class="row">
-    <div class="col-xs-12 d-flex">
-        <a href="#" class="list-group-item clearfix">
-            <div class="d-flex justify-content-end">
-                <h4 class="list-group-item-heading">Recipe Name</h4>
-                <p class="list-group-item-text"></p>
+    <div class="list-group">
+
+        <a href="#" class="list-group-item list-group-item-action" aria-current="true" *ngFor="let recipe of recipes">
+
+            <div class="d-flex justify-content-between">
+                <div>
+                    <h5 class="mb-1">{{ recipe.name }}</h5>
+                    <p class="mb-1">{{ recipe.description }}</p>
+                </div>
+                <img [src]="recipe.imagePath" alt="{{ recipe.name }}" width="100" class="img-fluid rounded float-end">
             </div>
-            <span class="d-flex justify-content-end">
-                <img src="" alt="" class="img-responsive">
-            </span>
+            
         </a>
+
         <app-recipe-item></app-recipe-item>
     </div>
 </div>
