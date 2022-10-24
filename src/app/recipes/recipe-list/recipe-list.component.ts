@@ -11,7 +11,7 @@ export class RecipeListComponent implements OnInit {
   @Output() recipeWasSelected = new EventEmitter<Recipe>();    
   recipes: Recipe[] = [
     new Recipe('A Test Recipe', 'This is a simple test', 'https://dam.cocinafacil.com.mx/wp-content/uploads/2019/10/dulce-calabaza.jpg'),
-    new Recipe('A Test Recipe', 'This is a simple test', 'https://dam.cocinafacil.com.mx/wp-content/uploads/2019/10/dulce-calabaza.jpg')
+    new Recipe('A Test Recipe', 'This is a simple test', 'https://www.vidactual.com/rcpmaker/wp-content/uploads/2020/10/PandeMuerto.png')
 
   ];
 
